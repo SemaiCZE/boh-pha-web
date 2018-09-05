@@ -1,0 +1,37 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: TJ Bohemians Praha
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://boh-pha.cz" # the base hostname & protocol for your site, e.g. http://example.com
+timezone: Europe/Prague
+encoding: utf-8
+
+# Build settings
+markdown: kramdown
+kramdown:
+    input: GFM # GitHub Flavored Markdown
+
+#theme: minima
+#plugins:
+#  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+#my variables
+address: "Modřanská 1107/51, 14700 Praha &ndash; Podolí"
+phone: "+420 734 362 983"
+email: "stagr.m@seznam.cz"
+

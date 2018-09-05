@@ -1,0 +1,30 @@
+<div class="navbar-fixed">
+<nav role="navigation">
+	<div class="nav-wrapper container">
+		<a id="logo-container" href="#" class="brand-logo">
+			<img src="/assets/images/logo.png" alt="TJ Bohemians Praha" class="logo"/>
+		</a>
+		{% assign sorted_pages = site.html_pages | sort:"order" %}
+
+    	<ul class="right">
+			{% for node in sorted_pages %}
+			<li class="bold{% if page.url == node.url %} active{% endif %}">
+				<a href="{{ node.url }}">
+					<span class="menu-spacing">{{ node.title }}</span>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+
+		<ul id="nav-mobile" class="sidenav">
+			{% for node in sorted_pages %}
+			<li class="bold{% if page.url == node.url %} active{% endif %}">
+				<a href="{{ node.url }}">{{ node.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+	</div>
+</nav>
+</div>
+

@@ -1,0 +1,44 @@
+$boh-green: #008a52;
+$footer-grey: #3f3f3f;
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+body > div > nav {
+	background-color: $boh-green;
+}
+
+body > footer {
+	background-color: $footer-grey !important;
+}
+
+h1 {
+	font-size: 3rem;
+	color: $boh-green;
+}
+
+.nomargin {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.logo {
+	width: 116px;
+}
+
+.text-center {
+	width: 100%;
+	text-align: center;
+}
+
+.footer-copyright {
+	background-color: #3a3a3a !important;
+}
+
