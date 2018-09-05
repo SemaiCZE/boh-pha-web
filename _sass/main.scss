@@ -1,4 +1,4 @@
-$boh-green: #008a52;
+$boh-green: #00834a;
 $footer-grey: #3f3f3f;
 
 body {
@@ -22,6 +22,9 @@ body > footer {
 h1 {
 	font-size: 3rem;
 	color: $boh-green;
+	margin-top: 62px;
+	margin-bottom: 46px;
+	text-shadow: 2px 2px 7px #6f6f6f;
 }
 
 .nomargin {
@@ -41,4 +44,10 @@ h1 {
 .footer-copyright {
 	background-color: #3a3a3a !important;
 }
+
+.hicon {
+	color: $boh-green;
+	font-size: 55px !important;
+}
+
 

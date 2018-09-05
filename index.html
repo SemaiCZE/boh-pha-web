@@ -8,37 +8,68 @@ order: 1
 	<h1>Oddíl vodního slalomu a sjezdu</h1>
 </div>
 
+<div class="carousel carousel-slider">
+	{% for image in site.static_files %}
+		{% if image.path contains 'images/slider' %}
+			<a class="carousel-item" href="#image.name"><img src="{{ site.baseurl }}{{ image.path }}"></a>
+		{% endif %}
+	{% endfor %}
+</div>
+
 
 <div class="section">
   <!--   Icon Section   -->
   <div class="row">
     <div class="col s12 m4">
       <div class="icon-block">
-        <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-        <h5 class="center">Speeds up development</h5>
+        <h2 class="center"><i class="material-icons hicon">people</i></h2>
+        <h5 class="center">Kdo jsme</h5>
 
-        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+        <p class="light">
+			Jsme parta akčních lidí, které spojuje láska k divoké vodě. Jsou mezi námi špičkoví světový závodníci, důchodci i naprostí začátečníci. Všichni se ale rádi potkáme na společných akcích.
+		</p>
       </div>
     </div>
 
     <div class="col s12 m4">
       <div class="icon-block">
-        <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-        <h5 class="center">User Experience Focused</h5>
+        <h2 class="center"><i class="material-icons hicon">assignment</i></h2>
+        <h5 class="center">Naše činnost</h5>
 
-        <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+        <p class="light">
+			V první řadě se soustředíme na sportovní přípravu závodníků všech výkonnostních úrovní. Kromě běžných tréninků na Vltavě a v tělocvičně pořádáme několik soustředění na divoké vodě a běžkách. Tradičně náš oddíl také pořádá několik závodů včetně Českého poháru ve sjezdu na Kamenici.
+		</p>
       </div>
     </div>
 
     <div class="col s12 m4">
       <div class="icon-block">
-        <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-        <h5 class="center">Easy to work with</h5>
+        <h2 class="center"><i class="material-icons hicon">add_box</i></h2>
+        <h5 class="center">Jak se k nám přidat</h5>
 
-        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+        <p class="light">
+			Rádi mezi námi uvidíme nové tváře. Na loděnici býváme prakticky každý den, ale doporučujeme předchozí domluvu s některým z trenérů. Pak stačí vzít jen oblečení na převlečení a hurá pádlovat.
+		</p>
+        <p class="light">
+			Hlavní tréninky pro mládež bývají v <b>pondělí</b> a <b>čtvrtek</b> v čase <b>17:00 &ndash; 18:00</b>.
+		</p>
       </div>
     </div>
   </div>
 
 </div>
 <br><br>
+
+
+<div class="section">
+	<h4>Podporují nás</h4>
+	<div class="row">
+		<div class="col s12 m6">
+			<img src="{{ site.baseurl }}/assets/images/partners/praha.jpg">
+		</div>
+		<div class="col s12 m6">
+			<img src="{{ site.baseurl }}/assets/images/partners/vvp-martin.jpg">
+		</div>
+	</div>
+</div>
+
