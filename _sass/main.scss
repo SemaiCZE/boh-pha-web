@@ -2,52 +2,79 @@ $boh-green: #00834a;
 $footer-grey: #3f3f3f;
 
 body {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
-	flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 body > div > nav {
-	background-color: $boh-green;
+  background-color: $boh-green;
 }
 
 body > footer {
-	background-color: $footer-grey !important;
+  background-color: $footer-grey !important;
 }
 
 h1 {
-	font-size: 3rem;
-	color: $boh-green;
-	margin-top: 62px;
-	margin-bottom: 46px;
-	text-shadow: 2px 2px 7px #6f6f6f;
+  font-size: 3rem;
+  color: $boh-green;
+  margin-top: 62px;
+  margin-bottom: 46px;
+  text-shadow: 2px 2px 7px #6f6f6f;
+}
+
+a {
+  color: $boh-green;
 }
 
 .nomargin {
-	margin-top: 0px;
-	margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .logo {
-	width: 116px;
+  width: 116px;
 }
 
 .text-center {
-	width: 100%;
-	text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .footer-copyright {
-	background-color: #3a3a3a !important;
+  background-color: #3a3a3a !important;
 }
 
 .hicon {
-	color: $boh-green;
-	font-size: 55px !important;
+  color: $boh-green;
+  font-size: 55px !important;
 }
 
+ul.address {
+  line-height: 35px;
+}
 
+ul.address > li > i {
+  vertical-align: text-bottom;
+}
+
+.middle-indicator {
+  position: absolute;
+  top: 50%;
+}
+.middle-indicator-text {
+  font-size: 4.2rem !important;
+}
+a.middle-indicator-text {
+  color: white !important;
+}
+.content-indicator {
+  width: 64px;
+  height: 64px;
+  background: none;
+  border-radius: 50px;
+}
