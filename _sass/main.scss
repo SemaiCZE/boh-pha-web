@@ -65,6 +65,7 @@ ul.address > li > i {
 .middle-indicator {
   position: absolute;
   top: 50%;
+  margin-top: -32px;
 }
 .middle-indicator-text {
   font-size: 4.2rem !important;
@@ -81,4 +82,8 @@ a.middle-indicator-text {
 
 div.navbar-fixed {
   z-index: unset;
+}
+
+nav {
+  z-index: 999;
 }
