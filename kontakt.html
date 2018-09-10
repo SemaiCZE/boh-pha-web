@@ -1,0 +1,51 @@
+---
+layout: default
+title: Kontakt
+order: 50
+---
+
+
+<div class="section">
+	<h4>Kontaktní údaje</h4>
+    <div class="row">
+        <div class="col s12 m6">
+            <table id="kontakt">
+                <tbody>
+                    <tr>
+                        <td>Adresa:</td>
+                        <td>{{ site.address }}</td>
+                    </tr>
+                    <tr>
+                        <td>Předseda:</td>
+                        <td>{{ site.master }}</td>
+                    </tr>
+                    <tr>
+                        <td>Telefon:</td>
+                        <td>{{ site.phone }}</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>{{ site.email }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col s12 m6">
+            <figure>
+                <img src="{{ site.baseurl }}/assets/images/qrcode.png" alt="Vizitka jako QR kód" />
+                <figcaption style="text-align: center;"><small>Vizitka ve formě QR kódu.</small></figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="row">
+        <div class="col s12 text-center">
+            <div class="map-container">
+                <iframe src="https://api.mapy.cz/frame?params=%7B%22x%22%3A14.411960208891657%2C%22y%22%3A50.044995504064076%2C%22base%22%3A%221%22%2C%22layers%22%3A%5B%5D%2C%22zoom%22%3A16%2C%22url%22%3A%22https%3A%2F%2Fmapy.cz%2Fs%2F32rea%22%2C%22mark%22%3A%7B%22x%22%3A%2214.41217478561282%22%2C%22y%22%3A%2250.044821533611625%22%2C%22title%22%3A%22Hotel%20Bohemians%22%7D%2C%22overview%22%3Afalse%7D&amp;width=700&amp;height=466&amp;lang=cs" width="700" height="466" style="border:none" frameBorder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>

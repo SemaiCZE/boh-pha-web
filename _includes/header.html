@@ -9,7 +9,7 @@
 			<ul class="right hide-on-med-and-down">
 				{% for node in sorted_pages %}
 				<li class="bold{% if page.url == node.url %} active{% endif %}">
-					<a href="{{ site.baseurl }}/{{ node.url }}">
+					<a href="{{ site.baseurl }}{{ node.url }}">
 						<span class="menu-spacing">{{ node.title }}</span>
 					</a>
 				</li>
@@ -22,7 +22,7 @@
 	<ul id="nav-mobile" class="sidenav">
 		{% for node in sorted_pages %}
 		<li class="bold{% if page.url == node.url %} active{% endif %}">
-			<a href="{{ site.baseurl }}/{{ node.url }}">{{ node.title }}</a>
+			<a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
 		</li>
 		{% endfor %}
 	</ul>

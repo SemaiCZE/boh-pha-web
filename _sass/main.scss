@@ -31,6 +31,10 @@ a {
   color: $boh-green;
 }
 
+main > div.container {
+  padding-top: 40px;
+}
+
 .nomargin {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -85,5 +89,38 @@ div.navbar-fixed {
 }
 
 nav {
-  z-index: 999;
+  z-index: 996;
+}
+
+table#kontakt {
+  border-collapse: unset;
+}
+
+table#kontakt > tbody > tr > td:first-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+figure > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.map-container {
+  position: relative;
+  width: 80%;
+  height: 0;
+  padding-bottom: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+div.map-container > iframe {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
