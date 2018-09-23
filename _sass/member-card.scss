@@ -1,0 +1,19 @@
+div.card > div {
+    overflow: hidden;
+}
+
+div.card-content > img {
+    border-radius: 50%;
+    width: 100px;
+    float: left;
+    margin-right: 30px
+}
+
+div.card-content > table {
+    width: calc(100% - 130px);
+    border-collapse: separate;
+}
+
+div.card-content > table > tbody > tr {
+    line-height: 10px;
+}

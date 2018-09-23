@@ -1,0 +1,44 @@
+- name: "Michal Šťastný"
+  nickname: "Šťágr"
+  icon: "stagr.jpg"
+  category: "C2"
+  achievements: "vim ja?"
+  note: "má nabušenýho bráchu"
+  email: "stagr.m@seznam.cz"
+  trainer: true
+
+- name: "Zdenka Grossmannová"
+  nickname: "Zdenka"
+  icon: "zdenka.jpg"
+  category: "K1"
+  achievements: "vim ja?"
+  note: "moje čistý miminka"
+  email: "info@supertubes.cz"
+  trainer: true
+
+- name: "Martin Smolka"
+  nickname: "Kojack"
+  icon: "kojack.jpg"
+  category: "C2"
+  achievements: "vim ja?"
+  note: "jedny s velbloudem"
+  email: "smolka@supertubes.cz"
+  trainer: true
+
+- name: "Václav Martin"
+  nickname: "Venca"
+  icon: "venca.jpg"
+  category: "C2, K1"
+  achievements: "vim ja?"
+  note: "není řidič lehké nohy"
+  email: "nastrojarna@vvp-martin.cz"
+  trainer: true
+
+- name: "Petr Stefan"
+  nickname: "Semai"
+  icon: "semai.jpg"
+  category: "K1"
+  achievements: "3. místo na MČR dorostu 2010, klasik"
+  note: "ten jez sjedem"
+  email: "ps@stdin.cz"
+  trainer: false

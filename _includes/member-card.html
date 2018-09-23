@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-content">
+        <span class="card-title">{{ include.name }}</span>
+        <img src="{{ site.baseurl }}/assets/images/members/{{ include.icon }}">
+        <table>
+            <tbody>
+                <tr>
+                    <td><b>Přezdívka:</b></td><td>{{ include.nickname }}</td>
+                </tr>
+                <tr>
+                    <td><b>Na čem závodím:</b></td><td>{{ include.category }}</td>
+                </tr>
+                <tr>
+                    <td><b>Největší úspěchy:</b></td><td>{{ include.achievements }}</td>
+                </tr>
+                <tr>
+                    <td><b>Poznámka:</b></td><td>{{ include.note }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    {% if include.email %}
+    <div class="card-action">
+        <a href="mailto:{{ include.email }}">Email</a>
+    </div>
+    {% endif %}
+</div>

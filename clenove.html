@@ -4,3 +4,27 @@ title: Členové
 order: 40
 ---
 
+<div class="section">
+	<h4>Trenéři</h4>
+    <div class="row">
+        {% assign trainers = site.data.members | where:"trainer","true" | sort:"name" %}
+        {% for member in trainers %}
+        <div class="col s12 m6">
+            {% include member-card.html name=member.name nickname=member.nickname icon=member.icon category=member.category achievements=member.achievements note=member.note email=member.email %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="section">
+    <h4>Aktivní členové</h4>
+    <div class="row">
+        {% assign active-members = site.data.members | where:"trainer","false" | sort:"name" %}
+        {% for member in active-members %}
+        <div class="col s12 m6">
+            {% include member-card.html name=member.name nickname=member.nickname icon=member.icon category=member.category achievements=member.achievements note=member.note email=member.email %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+    
