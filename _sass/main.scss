@@ -92,6 +92,10 @@ nav {
   z-index: 996;
 }
 
+figcaption {
+  text-align: center;
+}
+
 table#kontakt {
   border-collapse: unset;
 }
@@ -126,4 +130,8 @@ div.map-container > iframe {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.bottom-space {
+  padding-bottom: 70px;
 }

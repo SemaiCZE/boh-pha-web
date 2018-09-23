@@ -1,3 +1,7 @@
 <script src="{{ site.baseurl }}/assets/js/jquery-2.1.1.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/materialize.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/init.js"></script>
+
+{% if include.additional-script %}
+<script src="{{ site.baseurl }}/assets/js/{{ include.additional-script }}"></script>
+{% endif %}

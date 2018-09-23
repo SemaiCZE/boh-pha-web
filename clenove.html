@@ -2,29 +2,33 @@
 layout: default
 title: Členové
 order: 40
+additional-script: rvp.js
 ---
 
-<div class="section">
-	<h4>Trenéři</h4>
-    <div class="row">
-        {% assign trainers = site.data.members | where:"trainer","true" | sort:"name" %}
-        {% for member in trainers %}
-        <div class="col s12 m6">
-            {% include member-card.html name=member.name nickname=member.nickname icon=member.icon category=member.category achievements=member.achievements note=member.note email=member.email %}
-        </div>
-        {% endfor %}
-    </div>
-</div>
+{% assign trainers = site.data.members | where:"trainer","true" | sort:"name" %}
+{% include member-cards.html title="Trenéři" people=trainers %}
 
-<div class="section">
-    <h4>Aktivní členové</h4>
-    <div class="row">
-        {% assign active-members = site.data.members | where:"trainer","false" | sort:"name" %}
-        {% for member in active-members %}
-        <div class="col s12 m6">
-            {% include member-card.html name=member.name nickname=member.nickname icon=member.icon category=member.category achievements=member.achievements note=member.note email=member.email %}
-        </div>
-        {% endfor %}
-    </div>
+{% assign active-members = site.data.members | where:"trainer","false" | sort:"name" %}
+{% include member-cards.html title="Aktivní členové" people=active-members %}
+
+<div class="section bottom-space">
+    <h4 id="reg-heading">Všichni registrovaní členové</h4>
+    <table id="reg-members" class="striped responsive-table">
+        <thead>
+            <tr>
+                <th>Jméno</th>
+                <th>Registrační číslo</th>
+                <th>Rok narození</th>
+                <th>Věková kategorie</th>
+                <th>K1S</th>
+                <th>C1S</th>
+                <th>C2S</th>
+                <th>K1W</th>
+                <th>C1W</th>
+                <th>C2W</th>
+            </tr>
+        </thead>
+        <!-- table body populated by javascript -->
+        <tbody></tbody>
+    </table>
 </div>
-    
