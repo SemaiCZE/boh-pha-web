@@ -4,6 +4,7 @@ $timeline-color: $boh-green;
 .timeline {
     position: relative;
     margin: 0 auto;
+    overflow: auto;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -42,12 +43,21 @@ $timeline-color: $boh-green;
 
 /* Place the container to the left */
 .timeline-left {
-    left: 0;
+    //left: 0;
+    float: left;
+    clear: left;
 }
 
 /* Place the container to the right */
 .timeline-right {
-    left: 50%;
+    //left: 50%;
+    float: right;
+    clear: right;
+}
+
+/* Begin right column a little bit lower */
+.timeline > div.timeline-container:nth-child(2) {
+    margin-top: 60px;
 }
 
 %timeline-side {
@@ -113,6 +123,11 @@ $timeline-color: $boh-green;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent $boh-green transparent transparent;
+  }
+
+  /* Remove margin from top box in right column */
+  .timeline > div.timeline-container:nth-child(2) {
+      margin-top: 0px;
   }
 
   /* Make sure all circles are at the same spot */
