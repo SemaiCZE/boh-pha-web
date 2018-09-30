@@ -2,36 +2,40 @@
   nickname: "Šťágr"
   icon: "stagr.jpg"
   category: "C2"
-  achievements: "vim ja?"
+  achievements: "¯\\_(ツ)_/¯"
   note: "má nabušenýho bráchu"
   email: "stagr.m@seznam.cz"
+  phone: "+420 734 362 983"
   trainer: true
 
 - name: "Zdenka Grossmannová"
   nickname: "Zdenka"
   icon: "zdenka.jpg"
   category: "K1"
-  achievements: "vim ja?"
+  achievements: "¯\\_(ツ)_/¯"
   note: "matka čistých miminek"
   email: "info@supertubes.cz"
+  phone: "+420 605 283 770"
   trainer: true
 
 - name: "Martin Smolka"
   nickname: "Kojack"
   icon: "kojack.jpg"
   category: "C2"
-  achievements: "vim ja?"
+  achievements: "¯\\_(ツ)_/¯"
   note: "rád jedny s velbloudem"
   email: "smolka@supertubes.cz"
+  phone: "+420 776 321 019"
   trainer: true
 
 - name: "Václav Martin"
   nickname: "Venca"
   icon: "venca.jpg"
   category: "C2, K1"
-  achievements: "vim ja?"
+  achievements: "¯\\_(ツ)_/¯"
   note: "není řidič lehké nohy"
   email: "nastrojarna@vvp-martin.cz"
+  phone: "+420 775 630 654"
   trainer: true
 
 - name: "Petr Stefan"

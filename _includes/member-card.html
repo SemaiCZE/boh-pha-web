@@ -19,9 +19,18 @@
             </tbody>
         </table>
     </div>
-    {% if include.email %}
+    {% if include.email or include.phone %}
     <div class="card-action">
-        <a href="mailto:{{ include.email }}">Email</a>
+        <div class="left">
+            {% if include.phone %}
+                <span class="orange-text text-accent-2">{{ include.phone }}</span>
+            {% endif %}
+        </div>
+        <div class="right">
+            {% if include.email %}
+                <a href="mailto:{{ include.email }}">{{ include.email }}</a>
+            {% endif %}
+        </div>
     </div>
     {% endif %}
 </div>

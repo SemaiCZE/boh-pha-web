@@ -96,6 +96,11 @@ figcaption {
   text-align: center;
 }
 
+caption {
+  caption-side: bottom;
+  padding: 10px;
+}
+
 table#kontakt {
   border-collapse: unset;
 }

@@ -3,7 +3,7 @@
     <div class="row">
         {% for member in include.people %}
         <div class="col m12 l6">
-            {% include member-card.html name=member.name nickname=member.nickname icon=member.icon category=member.category achievements=member.achievements note=member.note email=member.email %}
+            {% include member-card.html name=member.name nickname=member.nickname icon=member.icon category=member.category achievements=member.achievements note=member.note email=member.email phone=member.phone %}
         </div>
         {% endfor %}
     </div>

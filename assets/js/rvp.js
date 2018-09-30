@@ -3,6 +3,8 @@
     $.ajax({
       type: 'GET',
       //url: "http://rvp.results.cz/export.php?format=csv&jmeno=&prijmeni=&narozen=&rc=&stat=&oddil=&pohlavi=&id=&cs=&cw=&ks=&kw=",
+      /*url:
+        'https://cors-anywhere.herokuapp.com/http://rvp.results.cz/export.php?format=csv&jmeno=&prijmeni=&narozen=&rc=&stat=&oddil=&pohlavi=&id=&cs=&cw=&ks=&kw=',*/
       url: 'assets/registr_utf8.csv',
       success: processData
     });
