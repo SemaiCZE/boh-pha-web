@@ -1,0 +1,7 @@
+- event: "ČP Lipno 2018"
+  links:
+    - "https://www.zonerama.com/photos/158668780_1600x1067_16.jpg"
+    - "https://www.zonerama.com/photos/158660225_1600x1068_16.jpg"
+    - "https://www.zonerama.com/photos/158660720_1600x1067_16.jpg"
+  locals:
+    - "lipno/photo_1.jpg"

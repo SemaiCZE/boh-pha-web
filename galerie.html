@@ -1,0 +1,29 @@
+---
+layout: default
+title: Fotogalerie
+order: 45
+additional-scripts:
+  - jquery.magnific-popup.min.js
+  - gallery.js
+additional-styles:
+  - magnific-popup.css
+---
+
+{% for gallery in site.data.gallery %}
+<div class="section">
+    <h4>{{ gallery.event }}</h4>
+    <div class="row gallery-parent">
+        {% for picture in gallery.locals %}
+            {% assign image_url = site.baseurl | append: "/assets/images/gallery/" | append: picture %}
+            <div class="col s12 m4 l3">
+                <a href="{{ image_url }}"><img src="{{ image_url }}" style="width: 100%;"></a>
+            </div>
+        {% endfor %}
+        {% for picture in gallery.links %}
+            <div class="col s12 m4 l3">
+                <a href="{{ picture }}"><img src="{{ picture }}" style="width: 100%;"></a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endfor %}

@@ -2,7 +2,8 @@
 layout: default
 title: Členové
 order: 40
-additional-script: rvp.js
+additional-scripts:
+  - rvp.js
 ---
 
 {% assign trainers = site.data.members | where:"trainer","true" | sort:"name" %}

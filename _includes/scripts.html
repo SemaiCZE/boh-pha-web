@@ -2,6 +2,6 @@
 <script src="{{ site.baseurl }}/assets/js/materialize.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/init.js"></script>
 
-{% if include.additional-script %}
-<script src="{{ site.baseurl }}/assets/js/{{ include.additional-script }}"></script>
-{% endif %}
+{% for script in include.additional-scripts %}
+    <script src="{{ site.baseurl }}/assets/js/{{ script }}"></script>
+{% endfor %}

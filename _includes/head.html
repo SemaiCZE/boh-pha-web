@@ -14,5 +14,9 @@
 	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/materialize.min.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	{% for style in include.additional-styles %}
+    	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ style }}">
+	{% endfor %}
 </head>
 
