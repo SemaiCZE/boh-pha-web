@@ -44,6 +44,12 @@ main > div.container {
   width: 116px;
 }
 
+@media screen and (max-width: 990px) {
+  .logo {
+    width: 82px;
+  }
+}
+
 .text-center {
   width: 100%;
   text-align: center;
@@ -99,6 +105,7 @@ figcaption {
 caption {
   caption-side: bottom;
   padding: 10px;
+  width: 100%;
 }
 
 table#kontakt {

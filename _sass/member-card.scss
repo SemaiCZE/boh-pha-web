@@ -2,7 +2,7 @@ div.card > div {
     overflow: hidden;
 }
 
-div.card-content > img {
+div.card-content > div.row > div.col > img {
     border-radius: 50%;
     width: 100px;
     float: left;
@@ -10,8 +10,8 @@ div.card-content > img {
     margin-top: 15px;
 }
 
-div.card-content > table {
-    width: calc(100% - 130px);
+div.card-content > div.row > div.col > table {
+    width: 100%;
     border-collapse: separate;
 }
 
