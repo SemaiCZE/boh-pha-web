@@ -32,7 +32,6 @@ h1 {
 
 a {
   color: $boh-green;
-  text-shadow: 0px 0px 1px #222222;
 }
 
 main > div.container {
@@ -105,6 +104,10 @@ div.navbar-fixed {
 
 nav {
   z-index: 996;
+}
+
+nav a, footer a {
+  text-shadow: 0px 0px 1px #222222;
 }
 
 figcaption {
