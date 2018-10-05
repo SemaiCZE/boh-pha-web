@@ -14,7 +14,7 @@
 
   const nameCompare = (a, b) => {
     return (
-      a.Jmeno.localeCompare(b.Jmeno) || a.Prijmeni.localeCompare(b.Prijmeni) // lastName first, but CSV headers do not match
+      a.Prijmeni.localeCompare(b.Prijmeni) || a.Jmeno.localeCompare(b.Jmeno)
     );
   };
 
@@ -47,7 +47,7 @@
     lines.sort(nameCompare).forEach(member => {
       $('#reg-members > tbody').append(
         $('<tr></tr>')
-          .append(`<td>${member['Prijmeni']} ${member['Jmeno']}</td>`)
+          .append(`<td>${member['Jmeno']} ${member['Prijmeni']}</td>`)
           .append(`<td>${member['RGC']}</td>`)
           .append(`<td>${member['Datum Narozeni']}</td>`)
           .append(`<td>${member['VK']}</td>`)

@@ -1,6 +1,10 @@
 $boh-green: #00834a;
 $footer-grey: #3f3f3f;
 
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -24,7 +28,6 @@ h1 {
   color: $boh-green;
   margin-top: 62px;
   margin-bottom: 46px;
-  text-shadow: 2px 2px 7px #6f6f6f;
 }
 
 a {
