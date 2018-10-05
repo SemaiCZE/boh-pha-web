@@ -26,16 +26,17 @@ body > footer {
 h1 {
   font-size: 3rem;
   color: $boh-green;
-  margin-top: 62px;
+  margin-top: 50px;
   margin-bottom: 46px;
 }
 
 a {
   color: $boh-green;
+  text-shadow: 0px 0px 1px #222222;
 }
 
 main > div.container {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .nomargin {
@@ -56,6 +57,11 @@ main > div.container {
 .text-center {
   width: 100%;
   text-align: center;
+}
+
+.page-footer {
+  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .footer-copyright {
