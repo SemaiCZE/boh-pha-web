@@ -60,6 +60,10 @@ $timeline-color: $boh-green;
     margin-top: 90px;
 }
 
+div.timeline-container > a {
+    color: black;
+}
+
 %timeline-side {
     content: " ";
     height: 0;
@@ -139,4 +143,14 @@ $timeline-color: $boh-green;
   .timeline-right {
     left: 0%;
   }
+}
+
+/* Modal */
+div.modal-content > table {
+    border-collapse: separate;
+    width: 100%;
+}
+
+div.modal-content > table > tbody > tr > td:first-child {
+    font-weight: bold;
 }

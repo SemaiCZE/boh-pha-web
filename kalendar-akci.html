@@ -2,6 +2,8 @@
 layout: default
 title: Kalendář akcí
 order: 20
+additional-scripts:
+  - calendar.js
 ---
 
 <div class="section">
@@ -9,10 +11,53 @@ order: 20
     <div class="timeline">
         {% for event in site.data.timeline %}
             <div class="timeline-container {% cycle 'timeline-left', 'timeline-right' %}">
-                <div class="timeline-content card">
-                    <h5>{{ event.name }}</h5>
-                    <p>{{ event.date }}</p>
-                    <p>{{ event.participants }}</p>
+                {% assign itemid = event.name | slugify: 'latin' %}
+                <a class="modal-trigger" href="#{{ itemid }}">
+                    <div class="timeline-content card">
+                        <h5>{{ event.name }}</h5>
+                        <p>{{ event.date }}</p>
+                    </div>
+                </a>
+                <!-- Modal Structure -->
+                <div id="{{ itemid }}" class="modal">
+                    <div class="modal-content">
+                        <h4>{{ event.name }}</h4>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Datum:</td>
+                                    <td>{{ event.date }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Účastníci:</td>
+                                    <td>{{ event.participants }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Vedoucí:</td>
+                                    <td>{{ event.leader }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Doprava:</td>
+                                    <td>{{ event.transport }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Ubytování:</td>
+                                    <td>{{ event.accommodation }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Přihlášky nejpozději do:</td>
+                                    <td>{{ event.deadline }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Přihlášky posílejte na:</td>
+                                    <td><a href="{{ event.registration }}">{{ event.registration }}</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Zavřít</a>
+                    </div>
                 </div>
             </div>
         {% endfor %}
