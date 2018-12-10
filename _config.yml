@@ -4,8 +4,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: TJ Bohemians Praha
-baseurl: "/boh-pha-web" # the subpath of your site, e.g. /blog
-url: "https://semaicze.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "/boh-pha-web" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://bohemka-voda.cz" # the base hostname & protocol for your site, e.g. http://example.com
 timezone: Europe/Prague
 description: "Webová prezentace vodáckého oddílu TJ Bohemians Praha"
 encoding: utf-8
