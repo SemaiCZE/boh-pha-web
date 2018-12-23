@@ -1,20 +1,14 @@
----
-layout: default
-title: Kalendář akcí
-order: 20
-additional-scripts:
-  - calendar.js
----
-
 <div class="section">
-    <h4>Kalendář akcí pro členy klubu</h4>
+    <h4>Kalendář akcí pro členy klubu &ndash; {{ include.year }}</h4>
     <div class="timeline">
-        {% for event in site.data.timeline %}
+        {% assign year_events = site.data.timeline | where_exp:"item", "item.year == include.year" %}
+        {% for event in year_events %}
             <div class="timeline-container {% cycle 'timeline-left', 'timeline-right' %}">
                 {% assign itemid = event.name | slugify: 'latin' %}
                 <a class="modal-trigger" href="#{{ itemid }}">
                     <div class="timeline-content card">
                         <h5>{{ event.name }}</h5>
+                        <p>{{ event.place }}</p>
                         <p>{{ event.date }}</p>
                     </div>
                 </a>
@@ -63,3 +57,5 @@ additional-scripts:
         {% endfor %}
     </div>
 </div>
+
+{% include calendar-year-links.html active_year=include.year %}

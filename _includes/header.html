@@ -4,7 +4,7 @@
 			<a id="logo-container" href="{{ site.baseurl }}/" class="brand-logo">
 				<img src="{{ site.baseurl }}/assets/images/logo.png" alt="TJ Bohemians Praha" class="logo" />
 			</a>
-			{% assign sorted_pages = site.html_pages | sort:"order" %}
+			{% assign sorted_pages = site.html_pages | where_exp:"item","item.order > 0" | sort:"order" %}
 
 			<ul class="right hide-on-med-and-down">
 				{% for node in sorted_pages %}

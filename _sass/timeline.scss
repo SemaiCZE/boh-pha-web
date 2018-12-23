@@ -154,3 +154,9 @@ div.modal-content > table {
 div.modal-content > table > tbody > tr > td:first-child {
     font-weight: bold;
 }
+
+
+/* Pagination */
+ul.pagination > li.active {
+    background-color: $boh-green !important;
+}

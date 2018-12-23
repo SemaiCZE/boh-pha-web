@@ -1,0 +1,15 @@
+<div class="section text-center">
+    {% assign yearly_events = site.data.timeline | group_by: "year" %}
+    <ul class="pagination">
+        <!--<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>-->
+        {% for event in yearly_events %}
+            {% if event.name == include.active_year %}
+                <li class="waves-effect active">
+            {% else %}
+                <li class="waves-effect">
+            {% endif %}
+            <a href="{{ site.baseurl }}{{ event.name }}">{{ event.name }}</a></li>
+        {% endfor %}
+        <!--<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>-->
+    </ul>
+</div>
