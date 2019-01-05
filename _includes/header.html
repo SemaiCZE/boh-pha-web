@@ -5,9 +5,16 @@
 				<img src="{{ site.baseurl }}/assets/images/logo.png" alt="TJ Bohemians Praha" class="logo" />
 			</a>
 			{% assign sorted_pages = site.html_pages | where_exp:"item","item.order > 0" | sort:"order" %}
+			
+			{% assign filtered_sorted_pages =  '' | split: ',' %}
+			{% for node in sorted_pages %}
+				{% unless node.url contains 'strana' %}
+					{% assign filtered_sorted_pages = filtered_sorted_pages | push: node %}
+				{% endunless %}
+			{% endfor %}
 
 			<ul class="right hide-on-med-and-down">
-				{% for node in sorted_pages %}
+				{% for node in filtered_sorted_pages %}
 				<li class="bold{% if page.url == node.url %} active{% endif %}">
 					<a href="{{ site.baseurl }}{{ node.url }}">
 						<span class="menu-spacing">{{ node.title }}</span>

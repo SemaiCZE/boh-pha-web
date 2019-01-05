@@ -17,8 +17,11 @@ kramdown:
     input: GFM # GitHub Flavored Markdown
 
 #theme: minima
-#plugins:
-#  - jekyll-feed
+plugins:
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "novinky/strana:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

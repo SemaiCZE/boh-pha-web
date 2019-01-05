@@ -1,0 +1,55 @@
+---
+layout: default
+title: Novinky
+order: 15
+additional-scripts:
+additional-styles:
+---
+
+{% for post in paginator.posts %}
+<div class="card news-post">
+  <div class="card-content">
+      <span class="card-title text-green">{{ post.title }}</span>
+      <p>
+        <span class="text-muted">Přidáno: {{ post.date | date: "%d.%m.%Y" }}</span>
+      </p>
+      <div class="post-content-preview">
+        {{ post.excerpt }}
+      </div>
+      <p class="text-muted">...</p>
+  </div>
+  <div class="card-action">
+    <div class="left">
+      <a href="{{ post.url }}">Celá zpráva</a>
+    </div>
+</div>
+</div>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="section text-center">
+  <ul class="pagination">
+    {% if paginator.previous_page %}
+      <li class="waves-effect"><a href="{{ paginator.previous_page_path | relative_url }}"><i class="material-icons">chevron_left</i></a></li>
+    {% else %}
+      <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <li class="waves-effect active"><a href="#">{{ page }}</a></li>
+      {% elsif page == 1 %}
+        <li class="waves-effect"><a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a></li>
+      {% else %}
+        <li class="waves-effect"><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <li class="waves-effect"><a href="{{ paginator.next_page_path | relative_url }}"><i class="material-icons">chevron_right</i></a></li>
+    {% else %}
+      <li class="disabled"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+    {% endif %}
+  </ul>
+</div>
+{% endif %}
