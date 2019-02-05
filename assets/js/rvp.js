@@ -3,11 +3,9 @@
     $.ajax({
       type: 'GET',
       //url: "http://rvp.results.cz/export.php?format=csv&jmeno=&prijmeni=&narozen=&rc=&stat=&oddil=&pohlavi=&id=&cs=&cw=&ks=&kw=",
-      /*url:
-        'https://cors-anywhere.herokuapp.com/http://rvp.results.cz/export.php?format=csv&jmeno=&prijmeni=&narozen=&rc=&stat=&oddil=&pohlavi=&id=&cs=&cw=&ks=&kw=',*/
       //url: 'assets/registr_utf8.csv',
-      //url: 'http://rvp.results.cz/export_bohemka.php',
-      url: 'https://ps.stdin.cz/export_bohemka.php', // use our server as HTTPS proxy for now
+      url: 'https://rvp.results.cz/export_bohemka.php',
+      //url: 'https://ps.stdin.cz/export_bohemka.php', // use our server as HTTPS proxy for now
       success: processData
     });
   }); // end of document ready
