@@ -12,4 +12,4 @@ Run locally
 > live-reload on changes
 
 1. `# docker-compose up`
-2. open: http://localhost:4000/boh-pha-web
+2. open: http://localhost:4000
