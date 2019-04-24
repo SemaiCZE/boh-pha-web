@@ -1,3 +1,8 @@
+- event: "Jarní sjezdy na Lužnici - Bechyně 2019"
+  locals:
+    - "bechyne_jaro_2019/photo1.jpg"
+    - "bechyne_jaro_2019/photo2.jpg"
+    - "bechyne_jaro_2019/photo3.jpg"
 - event: "ČP Lipno 2018"
   links:
     - "https://www.zonerama.com/photos/158668780_1600x1067_16.jpg"

@@ -3,7 +3,7 @@
   icon: "stagr.jpg"
   category: "C2"
   achievements: "¯\\_(ツ)_/¯"
-  note: "má nabušenýho bráchu"
+  motto: "Buď máš výsledky, nebo výmluvy, nikdy ne obojí"
   email: "stagr.m@seznam.cz"
   phone: "+420 734 362 983"
   trainer: true
@@ -13,7 +13,7 @@
   icon: "zdenka.jpg"
   category: "K1"
   achievements: "¯\\_(ツ)_/¯"
-  note: "matka čistých miminek"
+  motto: "Ta čistá miminka jsou moje"
   email: "info@supertubes.cz"
   phone: "+420 605 283 770"
   trainer: true
@@ -23,7 +23,7 @@
   icon: "kojack.jpg"
   category: "C2"
   achievements: "¯\\_(ツ)_/¯"
-  note: "rád jedny s velbloudem"
+  motto: "Jedny s velbloudem vždy potěší"
   email: "smolka@supertubes.cz"
   phone: "+420 776 321 019"
   trainer: true
@@ -33,7 +33,7 @@
   icon: "venca.jpg"
   category: "C2, K1"
   achievements: "¯\\_(ツ)_/¯"
-  note: "není řidič lehké nohy"
+  motto: "Nejsem řidič lehké nohy"
   email: "v.martin@vvp-martin.cz"
   phone: "+420 775 630 654"
   trainer: true
@@ -43,6 +43,6 @@
   icon: "semai.jpg"
   category: "K1"
   achievements: "3. místo na MČR dorostu 2010, klasik"
-  note: "ten jez sjedem"
+  motto: "Když mám v ruce kladivo, všechno najednou vypadá jako hřebík"
   email: "ps@stdin.cz"
   trainer: false
