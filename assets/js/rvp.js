@@ -47,8 +47,6 @@
         $('<tr></tr>')
           .append(`<td>${member['Jmeno']} ${member['Prijmeni']}</td>`)
           .append(`<td>${member['RGC']}</td>`)
-          .append(`<td>${member['Datum Narozeni']}</td>`)
-          .append(`<td>${member['VK']}</td>`)
           .append(`<td>${member['KS']}</td>`)
           .append(`<td>${member['C1S']}</td>`)
           .append(`<td>${member['C2S']}</td>`)
