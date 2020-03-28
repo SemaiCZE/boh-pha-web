@@ -46,3 +46,12 @@
   motto: "Když mám v ruce kladivo, všechno najednou vypadá jako hřebík"
   email: "ps@stdin.cz"
   trainer: false
+
+- name: "Barbora Bayerová"
+  nickname: "Barča"
+  icon: "barca.jpg"
+  category: "K1 ženy"
+  achievements: "5x 3.místo na ME nebo MS do 23 let v dlouhém sjezdu"
+  motto: "V přístavu je loď vždy v bezpečí, ale to není její účel"
+  trainer: false
+
